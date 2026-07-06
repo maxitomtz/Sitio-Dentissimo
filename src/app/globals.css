@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-white text-slate-700 antialiased;
+}
+
+/* Títulos con la tipografía redondeada del branding (Poppins) */
+h1,
+h2,
+h3,
+h4 {
+  @apply font-heading;
+}
+
+/* Slider antes/después */
+.ba-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+.ba-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  cursor: ew-resize;
+  opacity: 0;
+}
+.ba-slider input[type="range"]::-moz-range-thumb {
+  width: 48px;
+  height: 48px;
+  cursor: ew-resize;
+  opacity: 0;
+}

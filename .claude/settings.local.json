@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/ -maxdepth 4 -name \"node.exe\" 2>/dev/null | head -5)"
+    ]
+  }
+}
