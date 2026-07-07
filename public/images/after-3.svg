@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
-  <!-- REEMPLAZAR: foto real del caso DESPUES #3 (guardar como after-3.jpg y actualizar BeforeAfter.tsx) -->
-  <rect width="400" height="300" fill="#14b8a6"/>
-  <rect x="120" y="110" width="160" height="80" rx="40" fill="#ffffff"/>
-  <rect x="135" y="125" width="130" height="50" rx="25" fill="#f8fafc"/>
-  <text x="200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">DESPUES — PLACEHOLDER 3</text>
-  <text x="200" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f0fdfa">Reemplazar con foto real del caso</text>
-</svg>

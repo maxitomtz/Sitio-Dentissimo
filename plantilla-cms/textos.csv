@@ -13,10 +13,11 @@ trust.2.label,calificación en Google,Google rating
 services.title,Nuestros servicios,Our services
 services.subtitle,"Tratamientos seguros y efectivos, explicados con claridad y sin letras chiquitas. Tu primera valoración es gratis.","Safe, effective treatments at a fraction of U.S. prices. Your first evaluation is free."
 why.title,¿Por qué elegir Dentissimo?,Why patients cross the border to see us
-dentist.name,Dra. Valeria Cárdenas Ruiz,Dr. Valeria Cárdenas Ruiz
-dentist.credential,Cédula profesional: 0000000,Professional license (cédula): 0000000
-dentist.specialty,Cirujana Dentista · Especialidad en Rehabilitación Oral e Implantes,DDS · Specialist in Oral Rehabilitation & Implants
-dentist.bio,"La Dra. Valeria fundó Dentissimo con una idea muy simple: que nadie salga del dentista con más miedo del que traía al entrar.","Dr. Valeria founded Dentissimo with one simple idea: nobody should leave the dentist more scared than when they walked in."
+dentist.title,Conoce a tu equipo,Meet your team
+dentist.name,Equipo Dentissimo,The Dentissimo Team
+dentist.credential,Cédulas profesionales disponibles en recepción,Professional licenses available at the front desk
+dentist.specialty,Odontología general · Estética · Ortodoncia · Cirugía e Implantes,General dentistry · Cosmetic · Orthodontics · Surgery & Implants
+dentist.bio,"Somos un equipo de especialistas unidos por una idea muy simple: que nadie salga del dentista con más miedo del que traía al entrar.","We're a team of specialists united by one simple idea: nobody should leave the dentist more scared than when they walked in."
 membership.title,Membresía Dentissimo,Dentissimo Membership
 membership.subtitle,"Cuida tu sonrisa durante todo el año, para ti y para tus pequeños.",Smile care all year long — for you and your kids.
 membership.price,"$1,000 MXN","$1,000 MXN"
@@ -24,7 +25,9 @@ membership.priceNote,un solo pago al año,"≈ $55 USD, one yearly payment"
 pricing.title,Promoción del mes,This month's special
 pricing.highlight,Primera valoración GRATIS,FREE first evaluation
 pricing.text,"Ven a conocernos sin compromiso. En tu primera visita revisamos tu salud bucal, resolvemos tus dudas y te damos un plan de tratamiento claro, con precios por escrito y opciones de pago.","Come meet us with zero commitment. On your first visit we'll check your oral health, answer your questions and give you a clear written treatment plan with upfront pricing."
+pricing.orthoPromo,"Además, este mes: 20% de descuento en el pago inicial de tu tratamiento de ortodoncia.","Plus, this month: 20% off the initial payment of your orthodontic treatment."
+pricing.promoImage,/images/publi-ortodoncia.jpg,/images/publi-ortodoncia.jpg
 finalCta.title,Tu nueva sonrisa está a un mensaje de distancia,Your new smile is one message away
 finalCta.text,"Agenda hoy: los espacios de esta semana son limitados. Escríbenos por WhatsApp y te confirmamos tu cita en minutos.","Book today — this week's slots are limited. Message us on WhatsApp and we'll confirm your appointment in minutes."
-location.references,"Estamos sobre la Calzada Rotario Internacional, en el Local 12 de Plaza Aria. A unos minutos del centro de Mexicali y de la garita de Calexico East.","We're inside Plaza Aria on Calzada Rotario Internacional, Suite 12, a short drive from the Calexico East border crossing."
+location.references,"Estamos dentro de Plaza Aria, Local 12, sobre la Calzada Rotario Internacional (antes Blvd. Islas Agrarias). A unos minutos del centro de Mexicali y de la garita de Calexico East.","We're inside Plaza Aria, Suite 12, on Calzada Rotario Internacional (formerly Blvd. Islas Agrarias) — a short drive from the Calexico East border crossing."
 location.parking,Estacionamiento gratuito dentro de la plaza.,Free parking available at the plaza.

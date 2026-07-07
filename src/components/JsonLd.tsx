@@ -10,7 +10,7 @@ export default function JsonLd({ site }: { site: SiteData }) {
     name: site.name,
     url: SITE.url,
     telephone: site.phone,
-    image: `${SITE.url}/images/og.png`,
+    image: `${SITE.url}/images/equipo.jpg`,
     priceRange: "$$",
     currenciesAccepted: "MXN, USD",
     paymentAccepted: "Cash, Credit Card, Debit Card",

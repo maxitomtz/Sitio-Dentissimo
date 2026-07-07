@@ -21,21 +21,20 @@ function CompareSlider({
   const [pos, setPos] = useState(50);
 
   return (
-    <div className="ba-slider relative aspect-[4/3] select-none overflow-hidden rounded-2xl shadow-md">
+    <div className="ba-slider relative aspect-[16/9] select-none overflow-hidden rounded-2xl shadow-md">
       {/* Imagen "después" (fondo completo) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={after} alt={`${afterLabel}: ${alt}`} className="absolute inset-0 h-full w-full object-cover" draggable={false} />
-      {/* Imagen "antes" (recortada según la posición del slider) */}
-      <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={before}
-          alt={`${beforeLabel}: ${alt}`}
-          className="absolute inset-0 h-full object-cover"
-          style={{ width: "100vw", maxWidth: "none" }}
-          draggable={false}
-        />
-      </div>
+      {/* Imagen "antes": mismo tamaño que la de "después", recortada con clip-path
+          según la posición del slider (así ambas quedan perfectamente alineadas) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={before}
+        alt={`${beforeLabel}: ${alt}`}
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
+        draggable={false}
+      />
 
       {/* Línea divisoria + manija */}
       <div className="pointer-events-none absolute inset-y-0 z-10 w-1 -translate-x-1/2 bg-white shadow" style={{ left: `${pos}%` }}>
@@ -78,11 +77,9 @@ export default function BeforeAfter({ t }: { t: Content }) {
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {t.beforeAfter.cases.map((c, i) => (
             <div key={c.title}>
-              {/* REEMPLAZAR: fotos reales de casos antes/después
-                  (public/images/before-N.svg y after-N.svg → .jpg) */}
               <CompareSlider
-                before={`/images/before-${i + 1}.svg`}
-                after={`/images/after-${i + 1}.svg`}
+                before={`/images/before-${i + 1}.jpg`}
+                after={`/images/after-${i + 1}.jpg`}
                 beforeLabel={t.beforeAfter.beforeLabel}
                 afterLabel={t.beforeAfter.afterLabel}
                 alt={c.alt}

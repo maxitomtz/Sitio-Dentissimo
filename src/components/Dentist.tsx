@@ -6,12 +6,11 @@ export default function Dentist({ t }: { t: Content }) {
     <section id="dentista" className="bg-primary-50 py-16 lg:py-24">
       <div className="mx-auto grid max-w-5xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          {/* REEMPLAZAR: foto profesional de la dentista (public/images/dentist.svg → dentist.jpg) */}
           <Image
-            src="/images/dentist.svg"
+            src="/images/recepcion.jpg"
             alt={t.dentist.imageAlt}
             width={480}
-            height={560}
+            height={600}
             className="w-full max-w-sm mx-auto rounded-3xl shadow-lg"
           />
         </div>

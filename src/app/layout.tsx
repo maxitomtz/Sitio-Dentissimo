@@ -44,11 +44,10 @@ export const metadata: Metadata = {
       "Tu sonrisa sana empieza aquí. Blanqueamiento, implantes, cirugía oral, carillas y coronas en Mexicali. Primera valoración gratis.",
     images: [
       {
-        // REEMPLAZAR: public/images/og.png por una foto real de la clínica (1200×630)
-        url: "/images/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Dentissimo Clínica Dental en Mexicali",
+        url: "/images/equipo.jpg",
+        width: 1640,
+        height: 924,
+        alt: "El equipo de Dentissimo Clínica Dental en Mexicali",
       },
     ],
   },

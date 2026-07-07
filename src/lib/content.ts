@@ -53,7 +53,7 @@ const es = {
       "En Dentissimo cuidamos tu salud bucal con tecnología avanzada, un equipo de especialistas y un trato cálido que te hará olvidar el miedo al dentista. Cada visita, una experiencia positiva.",
     ctaPrimary: "Agenda tu cita por WhatsApp",
     ctaSecondary: "Conoce nuestros servicios",
-    imageAlt: "Paciente sonriendo en Dentissimo Clínica Dental en Mexicali",
+    imageAlt: "El equipo de especialistas de Dentissimo Clínica Dental en Mexicali",
   },
 
   trust: [
@@ -66,39 +66,79 @@ const es = {
   services: {
     title: "Nuestros servicios",
     subtitle:
-      "Tratamientos seguros y efectivos, explicados con claridad y sin letras chiquitas. Tu primera valoración es gratis.",
+      "Tratamientos seguros y efectivos, con precios claros y sin letras chiquitas. Tu primera valoración no cuesta nada.",
     cta: "Me interesa este servicio",
     items: [
+      {
+        id: "valoracion",
+        icon: "doctor",
+        title: "Valoración dental",
+        description:
+          "Revisión completa, diagnóstico y plan de tratamiento por escrito. Conócenos sin compromiso: tu primera visita va por nuestra cuenta.",
+        price: "Sin costo",
+      },
+      {
+        id: "limpieza",
+        icon: "brush",
+        title: "Limpieza dental",
+        description:
+          "Elimina placa y sarro, previene caries y cuida tus encías. La base de una sonrisa sana todo el año.",
+        price: "Desde $500 MXN",
+      },
+      {
+        id: "resinas",
+        icon: "tooth",
+        title: "Resinas (empastes)",
+        description:
+          "Repara caries y fracturas pequeñas con resinas del color exacto de tu diente. Nadie notará la diferencia.",
+        price: "Desde $500 MXN",
+      },
       {
         id: "blanqueamiento",
         icon: "sparkle",
         title: "Blanqueamiento dental",
         description:
           "Recupera el blanco natural de tus dientes en una sola sesión, con resultados visibles y sin dañar tu esmalte.",
-        price: "Precio a consultar",
+        price: "Desde $2,000 MXN",
       },
       {
-        id: "implantes",
-        icon: "implant",
-        title: "Implantes dentales",
+        id: "ortodoncia",
+        icon: "braces",
+        title: "Ortodoncia (brackets)",
         description:
-          "Reemplaza piezas perdidas con implantes que se ven y se sienten como dientes naturales. Vuelve a comer y sonreír con confianza.",
-        price: "Precio a consultar",
+          "Alinea tu sonrisa y corrige tu mordida con seguimiento especializado. Pregunta por el 20% de descuento en tu pago inicial.",
+        price: "Inicio desde $3,000 MXN",
+      },
+      {
+        id: "endodoncia",
+        icon: "root",
+        title: "Endodoncia",
+        description:
+          "Salva piezas dañadas eliminando la infección desde la raíz, sin dolor y en pocas citas.",
+        price: "Desde $2,500 MXN",
       },
       {
         id: "cirugia",
         icon: "surgery",
-        title: "Cirugía oral",
+        title: "Cirugía de muela del juicio",
         description:
-          "Extracciones de muelas del juicio y procedimientos quirúrgicos con anestesia segura y recuperación guiada paso a paso.",
-        price: "Precio a consultar",
+          "Extracciones seguras con anestesia moderna y recuperación guiada paso a paso.",
+        price: "Desde $2,000 MXN",
+      },
+      {
+        id: "implantes",
+        icon: "implant",
+        title: "Implante con corona",
+        description:
+          "Reemplaza piezas perdidas con implantes que se ven y se sienten como dientes naturales.",
+        price: "Desde $750 USD",
       },
       {
         id: "carillas",
         icon: "veneer",
         title: "Carillas y coronas",
         description:
-          "Corrige forma, color y alineación de tu sonrisa con carillas y coronas de porcelana de alta estética.",
+          "Corrige forma, color y alineación de tu sonrisa con porcelana de alta estética.",
         price: "Precio a consultar",
       },
     ] as ServiceItem[],
@@ -142,12 +182,12 @@ const es = {
   },
 
   dentist: {
-    title: "Conoce a tu dentista",
-    name: "Dra. Valeria Cárdenas Ruiz", // [VERIFICAR] Nombre inventado — reemplazar por el real
-    credential: "Cédula profesional: 0000000", // [RELLENAR] cédula real
-    specialty: "Cirujana Dentista · Especialidad en Rehabilitación Oral e Implantes",
-    bio: "La Dra. Valeria fundó Dentissimo con una idea muy simple: que nadie salga del dentista con más miedo del que traía al entrar. Egresada de la UABC con especialidad en rehabilitación oral, lleva más de 10 años devolviendo sonrisas en Mexicali. Le encanta explicar cada tratamiento con peras y manzanas, y presume que sus pacientes más nerviosos son hoy los que llegan más contentos a consulta.", // [VERIFICAR] Bio inventada — ajustar con datos reales
-    imageAlt: "Dra. Valeria Cárdenas, dentista en Dentissimo Mexicali",
+    title: "Conoce a tu equipo",
+    name: "Equipo Dentissimo",
+    credential: "Cédulas profesionales disponibles en recepción", // [RELLENAR] nombres y cédulas de los doctores
+    specialty: "Odontología general · Estética · Ortodoncia · Cirugía e Implantes",
+    bio: "Somos un equipo de especialistas unidos por una idea muy simple: que nadie salga del dentista con más miedo del que traía al entrar. En Dentissimo cada tratamiento lo realiza el especialista adecuado, te explicamos todo con peras y manzanas y avanzamos a tu ritmo, sin regaños. Ven a conocernos: nuestra clínica en Plaza Aria está pensada para que te sientas como en casa desde la recepción.", // [VERIFICAR] ajustar con nombres reales de los doctores
+    imageAlt: "Recepción de Dentissimo Clínica Dental en Plaza Aria, Mexicali",
   },
 
   beforeAfter: {
@@ -156,11 +196,11 @@ const es = {
     beforeLabel: "Antes",
     afterLabel: "Después",
     cases: [
-      { title: "Blanqueamiento dental", alt: "blanqueamiento dental en Mexicali" },
-      { title: "Carillas de porcelana", alt: "carillas dentales en Mexicali" },
-      { title: "Implante dental", alt: "implante dental en Mexicali" },
+      { title: "Alineación dental (ortodoncia)", alt: "ortodoncia en Mexicali, alineación dental antes y después" },
+      { title: "Ortodoncia completa", alt: "tratamiento de brackets en Mexicali, antes y después" },
+      { title: "Corrección de mordida", alt: "corrección de mordida con ortodoncia en Mexicali" },
     ],
-    note: "*Los resultados pueden variar según cada paciente.",
+    note: "*Casos reales de pacientes de Dentissimo. Los resultados pueden variar según cada paciente.",
   },
 
   testimonials: {
@@ -201,7 +241,10 @@ const es = {
       "Aceptamos tarjetas de crédito y débito",
     ],
     cta: "Quiero mi valoración gratis",
-    note: "*Promoción sujeta a cambios. Pregunta por las promociones vigentes del mes.", // [RELLENAR] promos reales del mes
+    note: "*Promociones sujetas a cambios. Pregunta por las promociones vigentes del mes.",
+    orthoPromo: "Además, este mes: 20% de descuento en el pago inicial de tu tratamiento de ortodoncia.",
+    promoImage: "/images/publi-ortodoncia.jpg",
+    promoImageAlt: "Promoción Dentissimo: inicia tu tratamiento de ortodoncia con 20% de descuento en el pago inicial",
   },
 
   membership: {
@@ -272,10 +315,14 @@ const es = {
     phonePlaceholder: "(686) 000 0000",
     serviceLabel: "Servicio de interés",
     serviceOptions: [
-      "Valoración general (gratis)",
+      "Valoración dental (sin costo)",
+      "Limpieza dental",
+      "Resinas (empastes)",
       "Blanqueamiento dental",
-      "Implantes dentales",
-      "Cirugía oral",
+      "Ortodoncia (brackets)",
+      "Endodoncia",
+      "Cirugía de muela del juicio",
+      "Implante con corona",
       "Carillas y coronas",
       "Urgencia dental",
       "Otro",
@@ -297,7 +344,7 @@ const es = {
     addressTitle: "Dirección",
     referencesTitle: "Cómo llegar",
     references:
-      "Estamos dentro de Plaza Aria, sobre la Calzada Rotario Internacional, Local 12. A unos minutos del centro de Mexicali y de la garita de Calexico East.", // [VERIFICAR] confirmar referencias con el cliente
+      "Estamos dentro de Plaza Aria, Local 12, sobre la Calzada Rotario Internacional (antes Blvd. Islas Agrarias). A unos minutos del centro de Mexicali y de la garita de Calexico East.",
     parkingTitle: "Estacionamiento",
     parking: "Estacionamiento gratuito dentro de la plaza.", // [VERIFICAR]
     hoursTitle: "Horarios",
@@ -358,7 +405,7 @@ const en: typeof es = {
       "Save up to 70% compared to U.S. prices without sacrificing quality. English-speaking team, advanced technology, and a warm, judgment-free experience — only minutes from the Calexico border crossing.",
     ctaPrimary: "Book your visit on WhatsApp",
     ctaSecondary: "See our services",
-    imageAlt: "Smiling patient at Dentissimo Dental Clinic in Mexicali",
+    imageAlt: "The team of specialists at Dentissimo Dental Clinic in Mexicali",
   },
 
   trust: [
@@ -371,39 +418,79 @@ const en: typeof es = {
   services: {
     title: "Our services",
     subtitle:
-      "Safe, effective treatments at a fraction of U.S. prices. Your first evaluation is free.",
+      "Safe, effective treatments at a fraction of U.S. prices — with upfront pricing. Your first evaluation is free.",
     cta: "I'm interested",
     items: [
+      {
+        id: "valoracion",
+        icon: "doctor",
+        title: "Dental evaluation",
+        description:
+          "Full check-up, diagnosis and a written treatment plan. Come meet us with zero commitment — your first visit is on us.",
+        price: "Free",
+      },
+      {
+        id: "limpieza",
+        icon: "brush",
+        title: "Dental cleaning",
+        description:
+          "Removes plaque and tartar, prevents cavities and protects your gums. The foundation of a healthy smile.",
+        price: "From $500 MXN (≈$28 USD)",
+      },
+      {
+        id: "resinas",
+        icon: "tooth",
+        title: "Fillings (composite)",
+        description:
+          "Repair cavities and small fractures with tooth-colored composite. Nobody will notice the difference.",
+        price: "From $500 MXN (≈$28 USD)",
+      },
       {
         id: "blanqueamiento",
         icon: "sparkle",
         title: "Teeth whitening",
         description:
           "Get a visibly whiter smile in a single session, safely and without damaging your enamel.",
-        price: "Ask for pricing",
+        price: "From $2,000 MXN (≈$110 USD)",
       },
       {
-        id: "implantes",
-        icon: "implant",
-        title: "Dental implants",
+        id: "ortodoncia",
+        icon: "braces",
+        title: "Orthodontics (braces)",
         description:
-          "Replace missing teeth with implants that look and feel natural — at a fraction of U.S. cost.",
-        price: "Ask for pricing",
+          "Straighten your smile and fix your bite with specialist follow-up. Ask about 20% off your initial payment.",
+        price: "Start from $3,000 MXN",
+      },
+      {
+        id: "endodoncia",
+        icon: "root",
+        title: "Root canal",
+        description:
+          "Save damaged teeth by removing the infection at the root — painless and in just a few visits.",
+        price: "From $2,500 MXN (≈$140 USD)",
       },
       {
         id: "cirugia",
         icon: "surgery",
-        title: "Oral surgery",
+        title: "Wisdom teeth removal",
         description:
-          "Wisdom teeth extractions and surgical procedures with safe anesthesia and guided recovery.",
-        price: "Ask for pricing",
+          "Safe extractions with modern anesthesia and step-by-step guided recovery.",
+        price: "From $2,000 MXN (≈$110 USD)",
+      },
+      {
+        id: "implantes",
+        icon: "implant",
+        title: "Implant with crown",
+        description:
+          "Replace missing teeth with implants that look and feel natural — a fraction of U.S. quotes.",
+        price: "From $750 USD",
       },
       {
         id: "carillas",
         icon: "veneer",
         title: "Veneers & crowns",
         description:
-          "Fix the shape, color and alignment of your smile with high-aesthetic porcelain veneers and crowns.",
+          "Fix the shape, color and alignment of your smile with high-aesthetic porcelain.",
         price: "Ask for pricing",
       },
     ] as ServiceItem[],
@@ -447,12 +534,12 @@ const en: typeof es = {
   },
 
   dentist: {
-    title: "Meet your dentist",
-    name: "Dr. Valeria Cárdenas Ruiz", // [VERIFY] Placeholder name — replace with real one
-    credential: "Professional license (cédula): 0000000", // [FILL IN] real license number
-    specialty: "DDS · Specialist in Oral Rehabilitation & Implants",
-    bio: "Dr. Valeria founded Dentissimo with one simple idea: nobody should leave the dentist more scared than when they walked in. A UABC graduate with a specialty in oral rehabilitation, she has spent over 10 years restoring smiles in Mexicali — many of them belonging to patients who drive down from California. She loves explaining every treatment in plain words, in English or Spanish.", // [VERIFY] Placeholder bio
-    imageAlt: "Dr. Valeria Cárdenas, dentist at Dentissimo Mexicali",
+    title: "Meet your team",
+    name: "The Dentissimo Team",
+    credential: "Professional licenses available at the front desk", // [FILL IN] doctors' names and license numbers
+    specialty: "General dentistry · Cosmetic · Orthodontics · Surgery & Implants",
+    bio: "We're a team of specialists united by one simple idea: nobody should leave the dentist more scared than when they walked in. At Dentissimo every treatment is performed by the right specialist, we explain everything in plain words — in English or Spanish — and we go at your pace. Come meet us: our clinic at Plaza Aria was designed to make you feel at home from the moment you walk in.", // [VERIFY] adjust with the doctors' real names
+    imageAlt: "Front desk at Dentissimo Dental Clinic in Plaza Aria, Mexicali",
   },
 
   beforeAfter: {
@@ -461,11 +548,11 @@ const en: typeof es = {
     beforeLabel: "Before",
     afterLabel: "After",
     cases: [
-      { title: "Teeth whitening", alt: "teeth whitening in Mexicali" },
-      { title: "Porcelain veneers", alt: "dental veneers in Mexicali" },
-      { title: "Dental implant", alt: "dental implant in Mexicali" },
+      { title: "Teeth alignment (orthodontics)", alt: "orthodontics in Mexicali, teeth alignment before and after" },
+      { title: "Full orthodontic treatment", alt: "braces treatment in Mexicali, before and after" },
+      { title: "Bite correction", alt: "bite correction with orthodontics in Mexicali" },
     ],
-    note: "*Results may vary from patient to patient.",
+    note: "*Real cases from Dentissimo patients. Results may vary from patient to patient.",
   },
 
   testimonials: {
@@ -506,7 +593,10 @@ const en: typeof es = {
       "Credit & debit cards accepted (USD ok)",
     ],
     cta: "Claim my free evaluation",
-    note: "*Promotion subject to change. Ask about this month's current specials.", // [FILL IN]
+    note: "*Promotions subject to change. Ask about this month's current specials.",
+    orthoPromo: "Plus, this month: 20% off the initial payment of your orthodontic treatment.",
+    promoImage: "/images/publi-ortodoncia.jpg",
+    promoImageAlt: "Dentissimo special: start your orthodontic treatment with 20% off the initial payment",
   },
 
   membership: {
@@ -577,10 +667,14 @@ const en: typeof es = {
     phonePlaceholder: "(760) 000 0000",
     serviceLabel: "Service you're interested in",
     serviceOptions: [
-      "General evaluation (free)",
+      "Dental evaluation (free)",
+      "Dental cleaning",
+      "Fillings (composite)",
       "Teeth whitening",
-      "Dental implants",
-      "Oral surgery",
+      "Orthodontics (braces)",
+      "Root canal",
+      "Wisdom teeth removal",
+      "Implant with crown",
       "Veneers & crowns",
       "Dental emergency",
       "Other",
@@ -602,7 +696,7 @@ const en: typeof es = {
     addressTitle: "Address",
     referencesTitle: "Getting here",
     references:
-      "We're inside Plaza Aria on Calzada Rotario Internacional, Suite 12 — a short drive from the Calexico East border crossing.", // [VERIFY] confirm landmarks with the client
+      "We're inside Plaza Aria, Suite 12, on Calzada Rotario Internacional (formerly Blvd. Islas Agrarias) — a short drive from the Calexico East border crossing.",
     parkingTitle: "Parking",
     parking: "Free parking available at the plaza.", // [VERIFY]
     hoursTitle: "Office hours",

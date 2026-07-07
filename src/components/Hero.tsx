@@ -44,13 +44,11 @@ export default function Hero({ t, site }: { t: Content; site: SiteData }) {
         </div>
 
         <div className="relative">
-          {/* REEMPLAZAR: foto real de la clínica o del equipo sonriendo.
-              Guarda la foto como public/images/hero.jpg y cambia el src a "/images/hero.jpg" */}
           <Image
-            src="/images/hero.svg"
+            src="/images/equipo.jpg"
             alt={t.hero.imageAlt}
-            width={600}
-            height={500}
+            width={820}
+            height={462}
             priority
             className="w-full rounded-3xl shadow-xl"
           />

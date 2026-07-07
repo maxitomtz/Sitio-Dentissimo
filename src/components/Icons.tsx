@@ -97,6 +97,27 @@ const paths: Record<string, JSX.Element> = {
     />
   ),
   check: <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />,
+  brush: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M4 4l6 2 9 9-2.5 2.5L7 8.5 4 4zM14 17.5c0 1.933-1.567 3.5-3.5 3.5S7 19.433 7 17.5c0-1.5 1-2 1.75-3.25L11 17l3 .5z"
+    />
+  ),
+  braces: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3 12c2.5-4.5 6-7 9-7s6.5 2.5 9 7M3 12c2.5 4.5 6 7 9 7s6.5-2.5 9-7M5.5 9.5v5M9 7.2v9.6M15 7.2v9.6M18.5 9.5v5"
+    />
+  ),
+  root: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M8 3.5c-2.5 0-4 2-4 4.5 0 3.5 1.8 5.5 2.3 8.3.3 1.7.5 4.2 1.9 4.2 1.3 0 1.4-2.3 1.8-4.2.4-1.7 1.1-2.8 2-2.8s1.6 1.1 2 2.8c.4 1.9.5 4.2 1.8 4.2 1.4 0 1.6-2.5 1.9-4.2.5-2.8 2.3-4.8 2.3-8.3 0-2.5-1.5-4.5-4-4.5-1.6 0-2.6.8-4 .8s-2.4-.8-4-.8zM12 7v6.5"
+    />
+  ),
   card: (
     <path
       strokeLinecap="round"
