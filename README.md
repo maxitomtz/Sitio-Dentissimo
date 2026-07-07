@@ -96,34 +96,32 @@ Notas:
 
 ## 🎨 Branding
 
-Colores tomados del logo oficial (definidos en `tailwind.config.ts`): azul marino `#212657` (`navy-900`) y turquesa `#5bc6d9` (`primary-400`), con blanco de fondo. Títulos en Poppins (similar al logotipo), cuerpo en Inter. El logo está recreado en SVG en `src/components/Logo.tsx` — si prefieres el archivo original, guárdalo como `public/images/logo.png` y reemplaza el componente.
+Colores tomados del logo oficial (definidos en `tailwind.config.ts`): azul marino `#212657` (`navy-900`) y turquesa `#5bc6d9` (`primary-400`), con blanco de fondo. Títulos en Poppins (similar al logotipo), cuerpo en Inter. El sitio usa el **isotipo original** con fondo transparente: `public/images/logo-mark.png` (fondos claros) y `logo-mark-light.png` (fondos oscuros), renderizados desde `src/components/Logo.tsx`. El favicon (`src/app/icon.jpg`) es el isotipo original sobre azul marino.
 
-## ✅ Checklist de placeholders a reemplazar
+## ✅ Checklist
 
-### 📷 Fotos (en `public/images/`)
+### 📷 Fotos (en `public/images/`) — ya con imágenes reales
 
-Reemplazar cada `.svg` placeholder por la foto real en `.jpg`/`.webp` y actualizar la ruta en el componente indicado:
-
-| Archivo actual | Foto real necesaria | Componente a actualizar |
+| Archivo | Contenido | Se usa en |
 |---|---|---|
-| `hero.svg` | Foto del equipo en recepción o paciente sonriendo (≈1200×1000) | `src/components/Hero.tsx` |
-| `dentist.svg` | Retrato profesional del/la dentista (vertical, ≈960×1120) | `src/components/Dentist.tsx` |
-| `before-1.svg` / `after-1.svg` | Caso real de blanqueamiento (mismas dimensiones entre sí) | `src/components/BeforeAfter.tsx` |
-| `before-2.svg` / `after-2.svg` | Caso real de carillas | `src/components/BeforeAfter.tsx` |
-| `before-3.svg` / `after-3.svg` | Caso real de implante | `src/components/BeforeAfter.tsx` |
-| `og.png` | Imagen para compartir en redes (exactamente 1200×630, con logo) | `src/app/layout.tsx` (si cambia el nombre) |
+| `equipo.jpg` | Foto real del equipo | Hero + imagen de Open Graph (redes) |
+| `recepcion.jpg` | Recepción de la clínica | Sección "Conoce a tu equipo" |
+| `before/after-1..3.jpg` | 3 casos reales de ortodoncia | Sliders antes/después |
+| `publi-ortodoncia.jpg` | Flyer promo ortodoncia -20% | Sección de promociones (**reemplazar cada mes** con la promo vigente, mismo nombre de archivo o actualizar la clave `pricing.promoImage` en el sheet) |
+| `logo-mark.png` / `logo-mark-light.png` | Isotipo original con fondo transparente | Header, footer, membresía y favicon (`src/app/icon.jpg`) |
+| `logo-original.jpg` / `logo-isotipo.jpg` | Archivos fuente del logo (respaldo) | — |
 
-> ⚠️ En los pares antes/después, ambas fotos deben tener el **mismo encuadre y tamaño** para que el slider comparativo se vea bien.
+Pendientes opcionales: retratos individuales de los doctores (para ampliar "Conoce a tu equipo").
 
 ### 📝 Datos a confirmar
 
-- [ ] **Teléfono:** el sitio usa (686) 478 4662, pero el flyer de la membresía dice (686) 429 2463 — confirmar cuál es el correcto (se corrige en la pestaña `general` del sheet)
+- [ ] **Teléfono:** el sitio usa (686) 478 4662, pero los flyers dicen (686) 429 2463 — confirmar cuál (se corrige en la pestaña `general` del sheet)
 - [ ] `src/lib/site.ts` → `url` (dominio real), `geo.lat`/`geo.lng` (coordenadas exactas del pin), `social.facebook` (URL exacta)
-- [ ] **Dentista:** nombre real, cédula y bio (hoy "Dra. Valeria Cárdenas Ruiz" es INVENTADO — editable en el sheet, pestaña `textos`)
+- [ ] **Doctores:** nombres y cédulas reales (pestaña `textos`, claves `dentist.*`)
 - [ ] **Barra de confianza:** años de experiencia, # de pacientes, rating reales (pestaña `textos`, claves `trust.*`)
 - [ ] **Testimonios:** copiar 3–6 reseñas REALES de Google Business (pestaña `testimonios`)
 - [ ] **Membresía:** confirmar precio y condiciones vigentes (pestaña `textos`, claves `membership.*`)
-- [ ] **Ubicación:** confirmar referencias (Plaza Aria) y estacionamiento
+- [ ] **Precios:** los servicios usan los precios del flyer (jul 2026); actualizarlos desde la pestaña `servicios` del sheet cuando cambien
 
 ### 📊 Analytics (`src/app/layout.tsx`)
 
@@ -145,3 +143,5 @@ Reemplazar cada `.svg` placeholder por la foto real en `.jpg`/`.webp` y actualiz
 - Slider comparativo antes/después (táctil, mouse y teclado)
 - SEO local: metadata optimizada, JSON-LD tipo `Dentist`, Open Graph, `sitemap.xml`, `robots.txt`, hreflang ES/EN
 - Mobile-first, botones táctiles ≥48px, `next/image`, fuentes Inter + Poppins con `next/font`
+#   D e n t i s s i m o  
+ 
